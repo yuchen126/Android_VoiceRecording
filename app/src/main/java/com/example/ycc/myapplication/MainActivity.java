@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                Uri selectedUri = Uri.parse(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC) + "/Audio");
+                Uri selectedUri = Uri.parse(Environment.getExternalStorageDirectory() + "/RecordedAudio/");
                 intent.setDataAndType(selectedUri,"audio/*");
                 startActivity(intent);
             }

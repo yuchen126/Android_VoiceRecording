@@ -1,8 +1,10 @@
 package com.example.ycc.myapplication;
 
+        import android.content.Intent;
         import android.media.MediaPlayer;
         import android.media.MediaRecorder;
 
+        import android.net.Uri;
         import android.os.Environment;
         import android.support.v7.app.AppCompatActivity;
 
@@ -12,6 +14,7 @@ package com.example.ycc.myapplication;
         import android.widget.Button;
         import android.widget.Toast;
 
+        import java.io.File;
         import java.io.IOException;
         import java.util.Date;
 
@@ -51,7 +54,13 @@ public class VoiceRecordingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(checkPermission()) {
-                    outputfile = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + createdTime + "_Rec.3gp";
+                    File f = new File(Environment.getExternalStorageDirectory() + "/AudioRecorded/");
+                    if(!f.isDirectory()) {
+                        File audioDirct = new File(Environment.getExternalStorageDirectory() + "/AudioRecorded/");
+                        audioDirct .mkdirs();
+                    }
+                    outputfile = Environment.getExternalStorageDirectory() + "/AudioRecorded/" + createdTime + "AudioRecording.mp3";
+
                     MediaRecorderReady();
                     try {
                         mediaRecorder.prepare();
@@ -67,6 +76,8 @@ public class VoiceRecordingActivity extends AppCompatActivity {
                 } else {
                     requestPermission();
                 }
+                sendBroadcast(new Intent(Intent.ACTION_MEDIA_MOUNTED, Uri.parse("file://" + Environment.getExternalStorageDirectory() + "/AudioRecorded/")));
+
             }
         });
 
