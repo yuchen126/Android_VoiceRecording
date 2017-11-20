@@ -1,29 +1,29 @@
 package com.example.ycc.myapplication;
 
-        import android.content.Intent;
-        import android.media.MediaPlayer;
-        import android.media.MediaRecorder;
+import android.content.Intent;
+import android.media.MediaPlayer;
+import android.media.MediaRecorder;
 
-        import android.net.Uri;
-        import android.os.Environment;
-        import android.support.v7.app.AppCompatActivity;
+import android.net.Uri;
+import android.os.Environment;
+import android.support.v7.app.AppCompatActivity;
 
-        import android.os.Bundle;
-        import android.view.View;
+import android.os.Bundle;
+import android.view.View;
 
-        import android.widget.Button;
-        import android.widget.Toast;
+import android.widget.Button;
+import android.widget.Toast;
 
-        import java.io.File;
-        import java.io.IOException;
-        import java.util.Date;
+import java.io.File;
+import java.io.IOException;
+import java.util.Date;
 
-        import static android.Manifest.permission.RECORD_AUDIO;
-        import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
+import static android.Manifest.permission.RECORD_AUDIO;
+import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
-        import android.support.v4.app.ActivityCompat;
-        import android.content.pm.PackageManager;
-        import android.support.v4.content.ContextCompat;
+import android.support.v4.app.ActivityCompat;
+import android.content.pm.PackageManager;
+import android.support.v4.content.ContextCompat;
 
 public class VoiceRecordingActivity extends AppCompatActivity {
     private Button btn_record;
@@ -77,7 +77,6 @@ public class VoiceRecordingActivity extends AppCompatActivity {
                     requestPermission();
                 }
                 sendBroadcast(new Intent(Intent.ACTION_MEDIA_MOUNTED, Uri.parse("file://" + Environment.getExternalStorageDirectory() + "/AudioRecorded/")));
-
             }
         });
 
