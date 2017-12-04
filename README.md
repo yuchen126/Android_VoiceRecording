@@ -1,4 +1,4 @@
-# Android_VoiceRecording
+# BTAP PICTURE NAMING MODULE
 Brain Trauma Assessment Protocols Team
 VIP Android Project
 
