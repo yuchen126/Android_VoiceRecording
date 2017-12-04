@@ -1,6 +1,7 @@
 package com.example.ycc.myapplication;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 
@@ -174,5 +175,11 @@ public class VoiceRecordingActivity extends AppCompatActivity {
                 RECORD_AUDIO);
         return result == PackageManager.PERMISSION_GRANTED &&
                 result1 == PackageManager.PERMISSION_GRANTED;
+    }
+
+    public String getSubjectId() {
+        SharedPreferences sp = getSharedPreferences("SubjectID", MODE_PRIVATE);
+        String sbjid = sp.getString("subjectID", "");
+        return sbjid;
     }
 }

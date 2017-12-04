@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Picture Naming</string>
+    <array name="levels">
+        <item>Bisyllabic</item>
+        <item>Monosyllabic</item>
+        <item>Multisyllabic</item>
+    </array>
 </resources>

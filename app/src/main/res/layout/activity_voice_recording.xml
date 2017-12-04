@@ -33,7 +33,6 @@
         android:layout_alignBaseline="@+id/btn_stop"
         android:layout_alignBottom="@+id/btn_stop"
         android:layout_toRightOf="@+id/btn_stop"
-        android:layout_toEndOf="@+id/btn_stop"
         android:layout_marginLeft="27dp"
         android:layout_marginStart="27dp" />
 
@@ -53,9 +52,8 @@
         android:id="@+id/btn_stopPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_stop"
         android:layout_marginTop="15dp"
-        android:layout_toLeftOf="@+id/btn_play"
-        android:layout_toStartOf="@+id/btn_play"
-        android:text="StopPlay" />
+        android:text="StopPlay"
+        android:layout_below="@+id/btn_stop"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

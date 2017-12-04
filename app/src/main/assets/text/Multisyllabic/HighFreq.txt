@@ -1,0 +1,65 @@
+astronaut,as
+banana,baah
+baseball glove,bay
+bicycle,bi
+bikini,bihh
+binoculars,bi
+bird bath,bir
+birthday cake,bir
+boomerang,boo
+broccoli,bra
+bunk bed,buh
+butterfly,buh
+calculator,khah
+calendar,khah
+camera,khah
+can opener,khah
+candy cane,khah
+candy land,khah
+carousel,cay
+caterpillar,khah
+cigarette,sea
+colander,caw
+cutting board,kuh
+dining room,dye
+dinosaur,dye
+dishwasher,di
+dollar bill,daw
+easter basket,e
+easter egg,e
+elephant,el
+eraser,e
+Football helmet,foo
+grasshopper,grah
+hair dryer,hey
+handlebar,haeh
+helicopter,heh
+hole puncher,ho
+hot dog,haw
+ice skate,i
+ironing board,i
+mannquin,mah
+microphone,my
+microwave,my
+mosquito,muh
+motorcycle,mow
+newspaper,new
+odometer,o
+pepperoni,peh
+piano,pee
+porcupine,poh
+scorpion,scoh
+skyscraper,sky
+snowmobile,snow
+spaghetti,spa
+submarine,saw
+suspenders,sah
+telephone,teh 
+telescope,teh 
+tomato,tuh
+tornado,tow
+tricycle,tri
+typewriter,tie
+umbrella,um
+waterfall,wah
+woodpecker,woo
